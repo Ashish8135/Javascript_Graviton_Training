@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        body{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        }
+        .box{
+            background-color:crimson;
+            width: 150px;
+            height: 150px;
+            /* transition-property: background;
+            transition-duration: 5s;
+            transition-timing-function: ease-out;
+            transition-delay: 2s; */
+            /* all together */
+            /* transition: background,border-radius 2s ease-in-out 1s; */
+            transition:all 2s ease-in-out 1s;
+
+        }
+        .box:hover{
+            background-color: aqua;
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

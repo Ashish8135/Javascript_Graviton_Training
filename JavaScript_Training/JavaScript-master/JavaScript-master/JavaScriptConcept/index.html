@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tutorials </title>
+    <!-- <script src="dom.js"></script> -->
+</head>
+<body>
+    <!-- <ul>
+        <li class="cl">List1</li>
+        <li id="first">list2</li>
+        <li>list3</li>
+        <li class="cl">list4</li>
+    </ul>  -->
+    <!-- <p>para1</p>
+    <div id = "div1">
+        <h2>heading1</h2>
+        <p>para2</p>
+        <h2>heading2</h2>
+        <p>para3</p>
+        <h2>heading3</h2>
+        <p>para4</p>
+        <h2>heading4</h2>
+    </div> -->
+    <!-- <ul>
+        <li id ="intro">list 10</li>
+        <li>list 20</li>
+        <li>list 30</li>
+        <li>list 40</li>
+    </ul>
+
+    <ul>
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </ul> -->
+
+
+
+    <!-- <h3 class="intro"></h3>
+    <div id = "div1">
+        <p class="intro">para1</p>
+        <h2>heading1</h2>
+        <p>para2</p>
+        <h2>heading2</h2>
+        <p>para3</p>
+        <h2>heading3</h2>
+        <p class="intro">para4</p>
+        <h2 class="intro">heading4</h2>
+    </div> -->
+
+    <!--  Create and Append Element in JavaScript -->
+        <!-- <div id ="intro">
+            <p>THis is the creating and appending element</p>
+        </div> -->
+        <!-- // Insert Before an Element in JavaScript -->
+
+        <ul id="list">
+            <li>List1</li>
+            <li>List2</li>
+            <li>List3</li>
+            <li>List4</li>
+        </ul>
+
+    <script>
+        // let elm = document.getElementById("first");
+        // elm.innerHTML= "<p>Hello DOM How are you </p>";
+        // console.log(elm);
+        // getelementByClass
+        // let ele = document.getElementsByClassName("cl");
+        // // console.log(ele.length);
+        // for(let i =0; i<ele.length;i++){
+        //     ele[i].innerHTML = "<p> Hello DOM Right </p>";
+        // }
+
+        // // Getelement by tagname select h2 element in div only
+        // let div1 = document.getElementById("div1");
+        // let tag = div1.getElementsByTagName("h2");
+        // // console.log(ele.length);
+        // for(let i =0; i<tag.length;i++){
+        //     tag[i].innerHTML = "<p> Hello DOM Element By Tag Name </p>";
+        // }
+
+        // Query Selector
+        // let query1 = document.querySelector("p.intro");
+        // let query2 = document.querySelectorAll("p.intro");
+        // // to select all use selectall method and use loop
+        // query1.innerHTML = "<p> Query selector selects only one element </p>";
+        // for(let i =0; i<query2.length;i++){
+        //     query2[i].innerHTML = "<p> Query selectorall selects all element </p>";
+        // }
+        
+        //  Traversing elements in JavaScript first select parent element and then select child element
+        // let elem = document.getElementById("intro");
+        // let prt = elem.parentElement;
+        // console.log(prt);
+
+        //  Create and Append Element in JavaScript
+            // let cret = document.getElementById("intro");
+            // let creath1 = document.createElement("h1");
+            // let text = document.createTextNode("Hello This is appending elements");
+            // console.log(creath1.appendChild(text));
+            // cret.appendChild(creath1);
+            // console.log(cret.appendChild(creath1));
+
+            // Insert Before an Element in JavaScript
+            let doc = document.getElementById("list");
+            let item = document.createElement("li");
+            item.textContent = "New List 5";
+            let pos = doc.firstElementChild.nextElementSibling;
+            doc.insertBefore(item,pos);
+
+            // Remove Child Element in JavaScript
+            let parent = document.getElementById("list");
+            let elm = parent.firstElementChild.nextElementSibling.nextElementSibling;
+            parent.removeChild(elm);
+
+            // Clone or Copy Element in JavaScript
+            let clon = document.getElementById("list");
+            let clonelm = clon.cloneNode(true);
+            // change id for 1st one
+            clonelm.id = "list-menu"
+            // console.log(clonelm); debug
+            document.body.appendChild(clonelm);
+
+            // Replace Element in JavaScript
+            let parentss = document.getElementById("list");
+            let cretchild = document.createElement("li");
+            cretchild.textContent = "Maximo";
+            let replacechild = parentss.firstElementChild.nextElementSibling;
+            parentss.replaceChild(cretchild,replacechild);
+
+            //  Insert Adjacent HTML in JavaScript
+
+            // Change Attribute in JavaScript 
+
+    </script>
+</body>
+</html>

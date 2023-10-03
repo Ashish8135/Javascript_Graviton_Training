@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu bar Project</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center ;
+        }
+        #logo{
+            width: 80px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #about-img{
+            width: 100%;
+        }
+        .sticky{
+            position: fixed;
+            top: 0%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="pubg.png" alt="" id="logo">
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Client</li>
+        <li>Our Team</li>
+        <li>Contact Us</li>
+    </nav>
+    <div id ="container">
+        <h1>Sticky Menu bar Project</h1>
+        <img src="lap.jpg" id = "about-img" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos numquam doloribus exercitationem natus similique assumenda placeat id odit, ipsa ab quos impedit minus dolore molestiae excepturi in odio quia reiciendis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fuga harum aliquid iste dolore ratione sed nemo impedit explicabo similique. Reprehenderit molestias nesciunt aut aliquam laudantium provident fugit voluptates facilis?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione rem harum sit laborum officia nam alias hic quisquam quidem expedita neque distinctio, veritatis laboriosam, nisi quam nostrum accusantium sunt explicabo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit commodi harum iure labore eos fuga ratione. Reiciendis eos est obcaecati ipsa nihil facere, culpa alias iusto, animi nulla inventore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora blanditiis eaque sit ipsum maiores error ipsam accusantium consectetur ratione. Quas officiis dolore maiores officia necessitatibus tenetur aspernatur! Temporibus, accusantium nihil.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus assumenda, eligendi aliquid beatae ipsa voluptate facere laborum fuga sequi provident vero nihil perferendis quisquam qui enim dolore, numquam ipsum vitae!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, facere distinctio, aliquid alias, impedit laboriosam nobis ad qui repellat delectus cupiditate quo omnis iusto esse ut animi illo modi eaque?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nulla, sunt hic enim animi adipisci impedit voluptates, laboriosam quasi maxime debitis provident, sapiente officiis cum accusamus rerum quos autem at.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quibusdam sit enim molestias aspernatur consequuntur repellendus, repellat, nihil nemo similique ex expedita deserunt exercitationem cumque modi, quos excepturi animi placeat?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam soluta dolorum, dolorem corporis minus cumque sed velit doloribus minima libero, voluptates facere consequuntur at? Voluptates inventore sunt quo eligendi facere!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis blanditiis iure iusto nostrum alias autem ipsa voluptatibus porro assumenda provident sequi nihil molestias, corporis nam corrupti mollitia modi libero esse.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis repellat harum voluptatibus id ratione quisquam sunt natus similique cumque nam a tenetur qui mollitia pariatur odit, aut animi at quam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus expedita beatae sapiente quod soluta ea repellat quas neque veniam cum dolorem aspernatur eveniet placeat, ad nam, mollitia blanditiis illum. Soluta!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus eveniet sequi, eaque ad earum, laboriosam cumque temporibus autem inventore voluptatum quia! Sed itaque ut incidunt sunt a architecto libero!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam voluptates ex, ad autem dolore inventore reiciendis eveniet ducimus iste minus saepe minima alias earum cupiditate doloribus, incidunt culpa fugit odio.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo velit voluptatibus, tempore, eveniet dolor quis illo reiciendis commodi obcaecati expedita repellendus error at dolorum excepturi facere quos minus amet vitae.
+        </p>
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar = document.getElementById("menu-bar");
+            if (window.pageYOffset >= 84){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tutorials </title>
+    <script src="./dom.js"></script>
+<body>
+    <!-- <button id="btn" onclick="btnclick()">Click Me</button> -->
+    <button id="btn" >Click Me</button>
+    <script>
+        let btn = document.getElementById('btn');
+// // btn.addEventListener('click',btnclick);
+
+// // through anonymous function
+btn.addEventListener('click',function(){
+    alert("Button is haveing clicked");
+});
+
+btn.addEventListener('mouseover',function(){
+    alert("Mouse over is activated");
+});
+
+btn.addEventListener('mouseout',function(){
+    alert("Mouse out is activated");
+});
+
+// Page load event
+
+    
+
+
+    </script>
+</body>
+</html>

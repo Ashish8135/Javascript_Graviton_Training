@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounf color switcher</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0px auto;
+        }
+        p{
+            font-size: 20px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid black 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #yellow{
+            background-color:yellow;
+        }
+        #aqua{
+            background-color:aquamarine;
+        }
+        #blue{
+            background-color:blue;
+        }
+        #red{
+            background-color:red;
+        }
+        #black{
+            background-color:black;
+        }
+        .color-switcher{
+            text-align: right ;
+        }
+    </style>
+</head>
+<body>
+    <div class="color-switcher">
+        <span class="btn" id ="yellow" onclick="changeBg('yellow')"></span>
+        <span class="btn" id ="aqua" onclick="changeBg('aqua')"></span>
+        <span class="btn" id ="blue" onclick="changeBg('blue')"></span>
+        <span class="btn" id ="red" onclick="changeBg('red')"></span>
+        <span class="btn" id ="black" onclick="changeBg('black')"></span>
+    </div>
+    <h1 class="txt">Background color switcher</h1>
+    <img src="lap.jpg" alt="">
+    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nam corporis facilis aspernatur illum molestias velit dolor ratione voluptate. Placeat officia autem ad ea, eius optio itaque repellat perspiciatis fugit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem neque excepturi quos voluptas, repellendus sequi quae natus eaque expedita totam laboriosam inventore maiores, eum iure rem, possimus nemo libero!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque omnis necessitatibus eaque accusantium minus officia modi iure? Velit quos praesentium dolore consequuntur quam. Quod obcaecati quasi inventore eveniet vero sit?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel quod voluptatum minima, velit ducimus amet placeat sit laudantium sapiente adipisci et id sequi delectus pariatur, numquam ut dolorem? Temporibus!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate, iusto quas obcaecati labore tenetur inventore saepe tempore consequuntur sunt asperiores nam consectetur harum dolore odit minus eaque ea temporibus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corrupti harum quasi possimus dolor, voluptates quidem itaque culpa accusantium beatae recusandae quos? Nulla officia, aut repudiandae maiores deserunt odio reprehenderit.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis obcaecati quis molestias corrupti nesciunt incidunt nam, repellendus velit accusantium porro atque commodi eius exercitationem accusamus distinctio et sed! At, sapiente.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, accusantium vel molestias ab cupiditate consequuntur unde corrupti necessitatibus nam ducimus, ea ipsa minima ut consectetur. Ea fugit molestias minima fuga!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio deleniti officia nemo distinctio aut eos aspernatur voluptas voluptatem dicta. Repudiandae consequatur quo nihil officiis magni! Ducimus eius vitae repellat explicabo!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, neque velit. Magni atque numquam reprehenderit eligendi iusto error itaque eos placeat excepturi est pariatur cupiditate ratione, sit eveniet laudantium qui?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, neque velit. Magni atque numquam reprehenderit eligendi iusto error itaque eos placeat excepturi est pariatur cupiditate ratione, sit eveniet laudantium qui?
+    </p>
+    <script>
+        function changeBg(color){
+            document.body.style.backgroundColor = color;
+            var text = document.getElementsByClassName('txt');
+            if (color =='black'){
+                for(let elm of text){
+                    elm.style.color='white';
+                }
+            }else{
+                for(let elm of text){
+                    elm.style.color='black';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

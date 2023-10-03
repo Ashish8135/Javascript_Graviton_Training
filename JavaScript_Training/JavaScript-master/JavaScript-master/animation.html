@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe Animation</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: firebrick;
+            left: 0;
+            top: 0;
+            position: relative;
+            /* animation-name: animate1;
+            animation-duration:2s;
+            /* animation-iteration-count: 3; */
+            /* animation-fill-mode: forwards; */
+            /* animation-delay: 5s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-timing-function: ease-in; */
+            animation: animate1 5s forwards 1s ease-in-out;
+        }
+        @keyframes animate1{
+            /* from{
+                width: 200px;
+            } */
+            /* from {
+                top: 0;
+            }
+            to{
+                width: 600px;
+                background-color: red;
+                top: 400px;
+            } */
+            25% {
+                top: 0;
+                left: 500px;
+                background-color: red;
+                border-radius: 50% 0 0 0;
+            }
+            50% {
+                top: 500px;
+                left: 500px;
+                background-color: yellow;
+                border-radius: 50% 50% 0 0;
+            }
+            75% {
+                top: 500px;
+                left: 0;
+                background-color: green;
+                border-radius: 50% 50% 50% 0;
+            }
+            100% {
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

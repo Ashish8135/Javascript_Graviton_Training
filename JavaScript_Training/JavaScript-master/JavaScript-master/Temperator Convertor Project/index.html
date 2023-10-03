@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperator Convertor Project</title>
+    <style>
+        body{
+            padding: 50px 300px;
+        }
+        h1{
+            text-align: center;
+        }
+        #container{
+            text-align: center;
+            background-color: aquamarine;
+            padding: 50px;
+        }
+        .input-div{
+            display: inline-block;
+        }
+        .inp{
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 250px;
+            text-align: center;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Formula of Temperator convertor :  celcius = (f-32)* (5/9) -->
+    <h1>Temperator Convertor</h1>
+    <div id="container">
+        <div class="input-div">
+            <label>Celcius</label><br>
+            <input type="number" value="0" id = "cel" class="inp">
+        </div>
+        <div class="input-div">
+            <label>Fahrenheit</label><br>
+            <input type="number" value="32" id="fah" class="inp">
+        </div>
+    </div>
+    <!-- Use input event  -->
+    <script>
+        var cel = document.getElementById("cel");
+        var fah = document.getElementById("fah");
+
+        cel.addEventListener('input',function(){
+            // console.log("cel console changed");
+            // convert celcius into farenheit
+            let c = this.value;
+            let faren  = (c * 9/5) + 32;
+            if (!Number.isInteger(faren)){
+                faren = faren.toFixed(4);
+            }
+            fah.value = faren;
+        });
+
+        fah.addEventListener('input',function(){
+            // console.log("fah console changed");
+            // Conver forenheit into celcius C = C = (F-32) (5/9)
+            let faren = this.value;
+            let celcius = (faren-32)*(5/9);
+            if (!Number.isInteger(celcius)){
+                celcius = celcius.toFixed(4);
+            }
+            cel.value = celcius;
+        });
+
+    </script>
+</body>
+</html>
