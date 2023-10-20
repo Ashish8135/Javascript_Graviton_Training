@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid red;
+    height: 400px;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-flow: wrap row;  /* combination of flex direction and gap */
+    align-items: center;   /* align item ka by default value is strech */
+    align-content: flex-start; /* is used to remove space between container */
+}
+.box{
+    border: 2px solid green;
+    margin: 10px 0;
+    width: 100px;
+    
+}
+
+#box-1{
+    order: 1;
+}
+
+#box-3{
+    order: 2;
+    flex-grow: 1;
+}
+
+/* Flex Container Properties  most important used
+ display :flex
+ align-item:center;
+ justify-content:center;
+
+*/
+
+/* Flex children properties 
+
+Order
+Flex-grow
+flex-shrink
+flex-basis
+flex
+align-self
+
+*/
