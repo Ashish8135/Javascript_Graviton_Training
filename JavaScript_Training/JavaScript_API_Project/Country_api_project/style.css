@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(137, 137, 208);
+}
+.container{
+    background-color: white;
+    width: 80vw;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 1.25em 1.8em rgba(8,21,61,0.25);
+}
+.country-search{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    grid-gap: 1em;
+}
+.search_country{
+    padding: .85em;
+   /* / border-radius: 5px; */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(51, 49, 49);
+    text-align: center;
+    letter-spacing: 1px;
+}
+.country-search button{
+    font-size: 1em;
+    border-radius: 8px ;
+    border: none;
+    background-color: rgb(78, 78, 185);
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
