@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <marquee bgcolor="red"> <h2>Form in HTML</h2></marquee>
+    <form action="">
+        <label for="fname">First Name :</label>
+        <input type="text" name="fname" id="fname" placeholder="First name" required>
+        <label for="lname">Last Name :</label>
+        <input type="text" name="lname" id="lname" placeholder="Last Name" >
+        <label for="age">Age :</label>
+        <input type="text" name="age" id="age" placeholder="age" >
+        <label for="mail">Email :</label>
+        <input type="email" name="lname" id="mail" placeholder="Email Me" >
+        <label for="pass">Password :</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter Password" >
+
+        <div>
+            <h3>Gender :</h3>
+            <input type="radio" value="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" value="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" value="other" name="gender">
+            <label for="other">other</label>
+        </div>
+
+        <div>
+            <h3>Select your device:</h3>
+            <input type="checkbox" value="iphone" name="mobile">
+            <label for="iphone">iphone</label>
+            <input type="checkbox" value="Macbook" name="mobile">
+            <label for="Macbook">Macbook</label>
+            <input type="checkbox" value="iPad" name="mobile">
+            <label for="iPad">iPad</label>
+        </div>
+
+        <div>
+            <label for="findme">How did you hear about us? </label>
+            <select name="findme" id="findme">
+                <option value="facebook">Social Media</option>
+                <option value="Whatsapp">Search Engine</option>
+                <option value="facebook">Friend</option>
+                <option value="facebook">Others</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Sign me up for News Letter</label>
+            <input type="checkbox">
+        </div>
+
+        <div>
+            <select>
+                <optgroup label="USA">
+                    <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option>Arizona</option>
+                </optgroup>
+                <optgroup label="Canada">
+                    <option>Alberta</option>
+                    <option>British Columbia</option>
+                    <option>Manitoba</option>
+                </optgroup>
+                </select>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Billing Address</legend>
+                <span>Address</span><input type="text" />
+                <span>City</span><input type="text" />
+                <span>Province</span><input type="text" />
+                <span>Postal Code</span><input type="text" />
+            </fieldset>
+        </div>
+<br><br>
+        <div>
+            <fieldset>
+                <span>Billing Address</span><input type="text" />
+                <span>City</span><input type="text" />
+                <span>Province</span><input type="text" />
+                <span>Postal Code</span><input type="text" />
+            </fieldset>
+        </div>
+
+
+        <br><br><br>
+        <div>
+            <label for="holiday-choice">Choose Your Favorite Holiday:</label>
+<input list="holiday-names" id="holiday-choice" name="holiday-choice" />
+<datalist id="holiday-names">
+    <option value="New Year's Day">
+    <option value="Independence Day">
+    <option value="Halloween">
+    <option value="Thanksgiving">
+    <option value="Christmas Day">
+</datalist>
+        </div>
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
