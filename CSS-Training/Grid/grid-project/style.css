@@ -65,3 +65,105 @@ img{
 
 
 /* Top Container styling start */
+
+.top-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+.showcase{
+grid-area: showcase;
+min-height: 400px;
+background: url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c29mdHdhcmUlMjBlbmdpbmVlcnxlbnwwfHwwfHx8MA%3D%3D');
+background-size: cover;
+background-repeat: no-repeat;
+padding: 3rem;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
+box-shadow: var(--primary);
+}
+/* top box */
+.top-box{
+    background-color: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+
+}
+.top-box-a{
+    grid-area: top-box-a;
+}
+.top-box-b{
+    grid-area: top-box-b;
+}
+.showcase h1{
+    color:var(--light);
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+.showcase p{
+    margin-top: 0;
+    color: var(--light);
+    font-size: 1.3rem;
+}
+.top-box .price{
+    font-size: 2.5rem;
+}
+
+/* boxes styling */
+
+.boxes{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    margin-top: 3rem;
+}
+
+
+.box{
+    text-align: center;
+    background-color: var(--primary);
+    padding: 1.5rem 2rem ;
+}
+
+.info{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2,1fr); 
+    padding: 3rem;
+    background:var(--primary);
+    box-shadow: var(--light);
+}
+
+.portfolio{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5,1fr); 
+    padding: 3rem;
+    background:var(--primary);
+    box-shadow: var(--light);
+   
+}
+
+.portfolio img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+footer{
+    margin-top: 2rem;
+    background:var(--primary);
+    color: var(--dark);
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* Media Query to make responsive */
