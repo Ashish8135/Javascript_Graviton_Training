@@ -152,8 +152,8 @@ box-shadow: var(--primary);
 }
 
 .portfolio img{
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
     width: 100%;
     box-shadow: var(--shadow);
 }
@@ -167,3 +167,32 @@ footer{
 
 
 /* Media Query to make responsive */
+@media(max-width:700px){
+.top-container{
+    grid-template-areas:
+    'showcase showcase'
+    'top-box-a top-box-b';
+}
+.showcase h1{
+    font-size: 2.5rem;
+}
+.main-nav ul{
+    grid-template-columns: 1fr;
+}
+.info{
+    grid-template-columns: 1fr;
+}
+}
+
+@media(max-width:500px){
+    .top-container{
+        grid-template-areas: 
+        'showcase'
+        'top-box-a'
+        'top-box-b';
+    }
+    .portfolio img{
+        display: block;
+        grid-template-areas: 1fr;
+    }
+}
